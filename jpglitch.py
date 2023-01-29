@@ -15,7 +15,7 @@ def pairwise(iterable):
 
 class GlitchedImage(object):
 
-    def __init__(self, image_bytes: bytes, amount: int, seed: int, iterations: int):
+    def __init__(self, image_bytes: bytearray, amount: int, seed: int, iterations: int):
         self.bytes = image_bytes
         self.new_bytes = None
         self.header_length = self.get_header_length()
@@ -84,7 +84,7 @@ class GlitchedImage(object):
 
         self.new_bytes = new_bytes
 
-    def get_bytes(self):
+    def get_bytes(self) -> bytes:
         while True:
             try:
                 self.glitch_bytes()
