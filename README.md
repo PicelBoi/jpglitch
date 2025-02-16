@@ -11,7 +11,7 @@ https://github.com/snorpey/glitch-canvas/
 
 ## Installation
 You should install it in a virtualenv by running `pip install
-git+https://github.com/Kareeeeem/jpglitch` or by cloning the repo and running
+git+https://github.com/PicelBoi/jpglitch` or by cloning the repo and running
 `python setup.py install`.
 
 ## Usage
